@@ -20,9 +20,11 @@ keymap("n", "<C-j>", "<C-w>j", opts)
 keymap("n", "<C-k>", "<C-w>k", opts)
 keymap("n", "<C-l>", "<C-w>l", opts)
 
--- Netrw
-keymap("n", "<leader>e", ":Lex 30<cr>", opts)
+-- Netrw, disabled when nvimtree is installed
+-- keymap("n", "<leader>e", ":Lex 30<cr>", opts)
 
+-- nvimtree
+keymap("n", "<leader>e", ":NvimTreeToggle<cr>", opts)
 
 -- Resize with arrows
 keymap("n", "<C-Up>", ":resize -2<CR>", opts)

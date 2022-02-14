@@ -103,6 +103,10 @@ return packer.startup(function(use)
   -- Terminal
   use "akinsho/toggleterm.nvim"
 
+  -- Vimwiki
+  use "vimwiki/vimwiki"
+  use "tools-life/taskwiki"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then

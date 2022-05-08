@@ -44,7 +44,7 @@ keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
 
 -- Insert --
 -- Press jk to go to normal mode
-keymap("i", "jk", "<ESC>", opts)
+-- keymap("i", "jk", "<ESC>", opts)
 
 
 -- Visual --

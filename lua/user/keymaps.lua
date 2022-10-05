@@ -41,6 +41,7 @@ keymap("n", "<A-q>", ":Bdelete<CR>", opts)
 -- Telescope
 keymap("n", "<leader>f", "<cmd>lua require'telescope.builtin'.find_files(require('telescope.themes').get_dropdown())<cr>", opts)
 keymap("n", "<leader>fg", "<cmd>Telescope live_grep<cr>", opts)
+keymap("n", "<leader>fb", "<cmd>Telescope buffers<cr>", opts)
 
 -- Insert --
 -- Press jk to go to normal mode

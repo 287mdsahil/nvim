@@ -22,7 +22,7 @@ nvimtree.setup({
     group_empty = true,
   },
   filters = {
-    dotfiles = true,
+    dotfiles = false,
   },
   on_attach = nvimtree_on_attach,
 })

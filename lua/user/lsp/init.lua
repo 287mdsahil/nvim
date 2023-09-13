@@ -1,9 +1,9 @@
-local status_ok, _ = pcall(require, "lspconfig")
+local status_ok, mason = pcall(require, "mason")
 if not status_ok then
-  vim.notify("lspconfig not found")
+  vim.notify("Mason not found")
   return
 end
 
-require("user.lsp.lsp-installer")
+mason.setup()
 require("user.lsp.handlers").setup()
-require("user.lsp.null-ls")
+require("user.lsp.mason-lspconfig")

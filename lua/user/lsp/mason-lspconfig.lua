@@ -23,6 +23,11 @@ mason_lspconfig.setup({
         opts = vim.tbl_deep_extend("force", jsonls_opts, opts)
       end
 
+      if server_name == "jdtls" then
+        local jdtls_opts = require("user.lsp.settings.jdtls")
+        opts = vim.tbl_deep_extend("force", jdtls_opts, opts)
+      end
+
       require("lspconfig")[server_name].setup(opts)
     end
   }

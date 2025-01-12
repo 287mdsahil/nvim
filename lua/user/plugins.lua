@@ -115,6 +115,9 @@ return packer.startup(function(use)
 
   use "lukas-reineke/indent-blankline.nvim"
 
+  -- Extensible UI for Neovim notifications and LSP progress messages
+  use "j-hui/fidget.nvim"
+
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
   if PACKER_BOOTSTRAP then
